@@ -1,0 +1,17 @@
+function fibonaci(n){
+const store = [0];
+
+ if(n===1){
+     return console.log(store)
+ }else if(n===2){
+     let answer = store.push(1);
+     return console.log(store)
+ }else{
+     const newStore = [0,1];
+     for(let i=1; i<n-1; i++ ){
+         let newAnswer = newStore[i]+newStore[i-1];
+         newStore.push(newAnswer);
+     }
+     return console.log(newStore)
+ }
+}
